@@ -1,5 +1,5 @@
 ## 2024_9_19
-
+<!-- - ![default](image/Default_2.jpg) 이미지 삽입방법-->
 - python 설치
 - python version 확인
 - python VsCode 사용법
@@ -13,8 +13,7 @@
 - 3th class
     - str class, indexing, slicing, len
 - 4th class
-    - ![Default Image](images/Default_2.jpg)
-
-
-
+    
+- 6th class
+    - 
 
