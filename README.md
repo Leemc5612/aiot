@@ -1,10 +1,4 @@
-
-
-
-
 ## 2024_9_19
-
-
 -python 설치
 -python version 확인
 -python VsCode 사용법
