@@ -1,16 +1,6 @@
 def main():
-    score =(input("학점 입력> "))
-    try:
-        if score > 4.5:
-            raise
-        if score < 0:
-            raise
-        if not score.isdigit:
-            raise
-        score = float(score)
-    except:
-        exit()
-
+    score =float(input("학점 입력> "))
+ 
     if score == 4.5:
         print(f"{score}점 변새롬 등급")
     elif 4.2 <= score < 4.5:
