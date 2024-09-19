@@ -11,4 +11,4 @@
 -3장
     -str class, indexing, slicing, len
 dd
-
+ddddd
