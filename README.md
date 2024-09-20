@@ -35,5 +35,14 @@
 
 - 2th class
   - append(요소 추가), insert, del
-  - remove, pop(리스트 요소 끄집어 내기),
+  - remove, pop(리스트 요소 끄집어 내기)
+  - in 연산자, not in 연산자, for 반복문
+  - 딕셔너리, 반복문
 
+- 3th class
+  - 딕셔너리 쌍추가, 제거
+  - 딕셔너리 내부에 키가 있는지 확인하기,
+  - for 반복문 딕셔너리와 함께 사용하기
+
+- 4th class
+  - 
