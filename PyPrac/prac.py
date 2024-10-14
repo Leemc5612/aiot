@@ -81,12 +81,101 @@
 # password = my_str[:3] + str(len(my_str)) + str(my_str.count("e")) + "!"
 # print("{0}의 비밀번호는 {1} 입니다".format(ur1, password))
 
-def solution(my_string, is_suffix):
-    my_string = my_string.index(is_suffix)
-    return my_string
+# def solution(my_string, is_suffix):
+#     my_string = my_string.index(is_suffix)
+#     return my_string
+
+# 리스트 
+
+# subway = [10, 20, 30]
+# print(subway)
+
+# subway = ["유재석", "조세호", "박명수"]
+# print(subway)
+# print(subway.index("조세호"))
+
+# print(subway)
+
+# #딕셔너리 자료형
+# cabinet = {3:"유재석", 100:"김태호"}
+# # print(cabinet[3])
+# # print(cabinet[100])
+
+# # print(cabinet.get(3))
+# # # print(cabinet[5])
+# # print(cabinet.get(5))
+# # print(cabinet.get(5, "사용 가능"))
+
+# # print("hi")
+
+# print(3 in cabinet) # True
+# print(5 in cabinet) # False
+
+# # cabinet = {"A-3": "유재석", "B_100":"김태호"}
+# # print(cabinet["A-3"])
+# # print(cabinet["B_100"])
+
+# # # 새 손님
+# # print(cabinet)
+# # cabinet["A-3"] = "김종국"
+# # cabinet["C-20"] = "조세호"
+# # print(cabinet)
+
+# # 튜플
+
+# # meun = ("돈까스", "치즈까스")
+# # print(meun[0])
+# # print(meun[1])
+
+# # name = "김종국"
+# # age = 20
+# # hobby = "코딩"
+# # print(name, age, hobby)
+
+# # (name, age, hobby) =  ("김종국", 20, "코딩")
+# # print(name, age, hobby)
+
+# #집합 (set)
+# # 중복 안됨, 순서 없음
+
+# my_set = {1,2,3,3,3}
+# print(my_set)
+
+# java = {"유재석", "김태호", "양세형"}
+# python = set(["유재석", "박명수"])
+
+# # 교집합 (java와 python 을 모두 할수 잇ㄴ는 개발자)
+
+# print(java & python)
+# print(java.intersection(python))
+
+# # 합집합(java python 하나라도 할수있는 개발자)
+# print(java | python)
+# print(java.union(python))
+
+# #차집합( java 하수있지만 python은 할줄ㅇ 모르는 개발자)
+# print(java - python)
+# print(java.difference(python))
+
+# #python 할줄아는 사람이 늘어났다
+# python.add("김태호")
+# print(python)
+
+# #java를 까먹음
+
+# java.remove("김태호")
+# print(java)
 
 
+#자료 구조의 변경
+#커피숍
+menu = {"커피", "우유", "주스"}
+print(menu, type(menu))
 
+menu = list(menu)
+print(menu, type(menu))
 
+menu = tuple(menu)
+print(menu, type(menu))
 
 
