@@ -99,3 +99,15 @@
 - 3th class
   - 머신러닝 딥러닝
   
+
+## 24.10.14
+- 1th class
+
+- 2th class
+
+- 3th class
+
+- 4th class
+  - imwrite 함수
+  - Mat::empty() 메소드
+  - nameedWindows 함수
