@@ -1,3 +1,6 @@
+import os
+from glob import glob
+
 from setuptools import find_packages, setup
 
 package_name = 'simpleRos'
@@ -10,10 +13,11 @@ setup(
         ('share/ament_index/resource_index/packages',
             ['resource/' + package_name]),
         ('share/' + package_name, ['package.xml']),
+        ('share/' + package_name + '/launch', glob(os.path.join('launch', '*.launch.py')))
     ],
     install_requires=['setuptools'],
     zip_safe=True,
-    maintainer='lmc',
+    maintainer='aa',
     maintainer_email='leemc5612@naver.com',
     description='simpleRos demo',
     license='Apache 2.0',
@@ -24,7 +28,8 @@ setup(
             "hello_class = simpleRos.hello_class:main",
             "hello_sub = simpleRos.hello_sub:main",
             "hello_pub = simpleRos.hello_pub:main",
-            "time_pub = simpleRos.time_pub:main"
+            "time_pub = simpleRos.time_pub:main",
+            "move_turtle = simpleRos.move_turtle:main"
             ],
     },
 )
