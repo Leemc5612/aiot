@@ -111,3 +111,7 @@
   - imwrite 함수
   - Mat::empty() 메소드
   - nameedWindows 함수
+
+
+
+ros2험블 설치방법##https://docs.ros.org/en/humble/Installation/Ubuntu-Install-Debs.html 
