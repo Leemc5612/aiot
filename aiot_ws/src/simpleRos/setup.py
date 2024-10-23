@@ -29,7 +29,12 @@ setup(
             "hello_sub = simpleRos.hello_sub:main",
             "hello_pub = simpleRos.hello_pub:main",
             "time_pub = simpleRos.time_pub:main",
-            "move_turtle = simpleRos.move_turtle:main"
+            "move_turtle = simpleRos.move_turtle:main",
+            "move_turtle_time = simpleRos.move_turtle_time:main",
+            "service_server = simpleRos.service_sever:main",
+            "service_client = simpleRos.service_client:main",
+            "user_int_pub = simpleRos.user_int_pub:main",
+            "service_server_int = simpleRos.service_server_int:main"
             ],
     },
 )

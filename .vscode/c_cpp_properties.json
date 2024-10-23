@@ -6,6 +6,7 @@
                 "${workspaceFolder}/**",
                 "/usr/include/opencv4",
                 "/opt/ros/humble/include/**"
+                // "/home/lmc/aiot/aiot_ws"
             ],
             "defines": [],
             "compilerPath": "/usr/bin/gcc",

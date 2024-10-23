@@ -10,6 +10,10 @@ find_package(ament_cmake REQUIRED)
 find_package(rclcpp REQUIRED)
 find_package(std_msgs REQUIRED)
 find_package(OpenCV REQUIRED)
+find_package(geometry_msgs REQUIRED)
+find_package(turtlesim REQUIRED)
+find_package(std_srvs REQUIRED)
+find_package(user_interface REQUIRED)
 
 # include directories
 include_directories(include)
@@ -31,12 +35,28 @@ target_link_libraries(hello_sub_opencv ${OpenCV_LIBS})
 target_link_directories(hello_sub_opencv PUBLIC ${OpenCV_LIB_DIR})
 ament_target_dependencies(hello_sub_opencv rclcpp std_msgs)
 
+add_executable(move_turtle src/move_turtle.cpp)
+ament_target_dependencies(move_turtle rclcpp geometry_msgs turtlesim)
+
+add_executable(service_server src/service_server.cpp)
+ament_target_dependencies(service_server rclcpp std_srvs)
+
+add_executable(service_client src/service_client.cpp)
+ament_target_dependencies(service_client rclcpp std_srvs)
+
+add_executable(service_client_int src/service_client_int.cpp)
+ament_target_dependencies(service_client_int rclcpp user_interface)
+
 install(TARGETS
   hello_pub
   hello_pub_lambda
   hello_pub_class
   hello_sub
   hello_sub_opencv
+  move_turtle
+  service_server
+  service_client
+  service_client_int
   DESTINATION lib/${PROJECT_NAME})
 
 install(DIRECTORY launch DESTINATION share/${PROJECT_NAME})
