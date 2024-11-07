@@ -72,7 +72,10 @@
         "cinttypes": "cpp",
         "typeindex": "cpp",
         "typeinfo": "cpp",
-        "variant": "cpp"
+        "variant": "cpp",
+        "valarray": "cpp",
+        "any": "cpp",
+        "regex": "cpp"
     },
     "C_Cpp.errorSquiggles": "disabled"
 }

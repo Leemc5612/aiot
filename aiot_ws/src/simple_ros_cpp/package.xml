@@ -4,11 +4,13 @@
   <name>simple_ros_cpp</name>
   <version>0.0.0</version>
   <description>ros2 simple cpp pacakge demo</description>
-  <maintainer email="leemc5612@naver.com">freshmea</maintainer>
+  <maintainer email="freshmea@naver.com">freshmea</maintainer>
   <license>Apache 2.0</license>
 
   <buildtool_depend>ament_cmake</buildtool_depend>
 
+  <depend>geometry_msgs</depend>
+  
   <test_depend>ament_lint_auto</test_depend>
   <test_depend>ament_lint_common</test_depend>
 

@@ -4,15 +4,14 @@
   <name>user_interface</name>
   <version>0.0.0</version>
   <description>user defined package</description>
-  <maintainer email="leemc5612@naver.com">lmc</maintainer>
-  <license>Apach 2.0</license>
+  <maintainer email="freshmea@naver.com">freshmea</maintainer>
+  <license>Apache 2.0</license>
 
   <buildtool_depend>ament_cmake</buildtool_depend>
   <buildtool_depend>rosidl_default_generators</buildtool_depend>
   <exec_depend>rosidl_default_runtime</exec_depend>
   <exec_depend>builtin_interfaces</exec_depend>
   <member_of_group>rosidl_interface_packages</member_of_group>
-
 
   <export>
     <build_type>ament_cmake</build_type>

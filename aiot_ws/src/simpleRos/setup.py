@@ -39,8 +39,13 @@ setup(
             "user_int_pub = simpleRos.user_int_pub:main",
             "service_server_int = simpleRos.service_server_int:main",
             "simple_parameter = simpleRos.simple_parameter:main",
+            "simple_parameter2 = simpleRos.simple_parameter2:main",
             "action_server = simpleRos.action_server:main",
-            "action_client = simpleRos.action_client:main"
+            "action_client = simpleRos.action_client:main",
+            "logging_example = simpleRos.logging_example:main",
+            "deadline = simpleRos.deadline:main",
+            "lifespan = simpleRos.lifespan:main",
+            "liveliness = simpleRos.liveliness:main"
             ],
     },
 )

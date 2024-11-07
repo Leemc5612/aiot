@@ -10,13 +10,13 @@ class Action_server(Node):
     def __init__(self):
         super().__init__("action_server")
         self.action_server = ActionServer(self,
-                                          Fibonacci,
-                                          "fibonacci",
-                                          execute_callback=self.execute_callback)
+                                        Fibonacci,
+                                        "fibonacci",
+                                        execute_callback=self.execute_callback)
 
     def execute_callback(self, goal_handle):
         self.get_logger().info(f"{goal_handle.request.step}")
-        feedback_msg = Fibonacci.Feedback()
+        feedback_msg = Fibonacci.Feedback()  
         feedback_msg.temp_seq = [0, 1]
         result = Fibonacci.Result()
 
