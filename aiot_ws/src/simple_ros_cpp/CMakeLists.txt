@@ -163,6 +163,7 @@ ament_target_dependencies(dynamic_tf2
   geometry_msgs
   turtlesim
 )
+
 add_executable(follow_turtle_tf src/follow_turtle_tf.cpp)
 ament_target_dependencies(follow_turtle_tf
   rclcpp
@@ -172,13 +173,18 @@ ament_target_dependencies(follow_turtle_tf
   turtlesim
 )
 
-add_executable(publish_map src/fpublish_map.cpp)
+add_executable(publish_map src/publish_map.cpp)
 ament_target_dependencies(publish_map
   rclcpp
   nav_msgs
 )
 
-
+add_executable(publish_map_with_lidar src/publish_map_with_lidar.cpp)
+ament_target_dependencies(publish_map_with_lidar
+  rclcpp
+  nav_msgs
+  sensor_msgs
+)
 
 install(TARGETS
   hello_pub
@@ -207,6 +213,7 @@ install(TARGETS
   dynamic_tf2
   follow_turtle_tf
   publish_map
+  publish_map_with_lidar
   DESTINATION lib/${PROJECT_NAME})
 
 install(DIRECTORY launch DESTINATION share/${PROJECT_NAME})
