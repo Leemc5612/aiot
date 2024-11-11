@@ -27,7 +27,8 @@ setup(
         'console_scripts': [
             "move_circle = move_turtle.move_circle:main",
             "move_rect = move_turtle.move_rect:main",
-            "follow_wall= move_turtle.folllow_wall:main"
+            "follow_wall= move_turtle.folllow_wall:main",
+            "follow_waypoints = move_turtle.fllow_waypoints:main"
         ],
     },
 )
