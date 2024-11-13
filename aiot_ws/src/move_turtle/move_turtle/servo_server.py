@@ -1,6 +1,3 @@
-import time
-
-import rclpy
 import RPi.GPIO as gpio
 from rclpy.node import Node
 from std_srvs.srv import SetBool
